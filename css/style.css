@@ -1,0 +1,434 @@
+body,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font-size: 16px;
+    background: #fafafa;
+	cursor: pointer;
+}
+
+/*导航栏*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 105px;
+    background-color: #fff;
+    border-bottom: 4px solid #ed435b;
+	/*最小宽度:如果浏览器小于960px,就会出现滚动条*/
+	min-width: 960px;
+}
+
+.nav-left{
+	display:-webkit-box;
+	width: 500px;
+	float: left;
+}
+
+.nav-left div{
+	left: 10px;
+	position: relative;
+	padding-left: 10px;
+	margin-left: 5px;
+	line-height: 105px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	color: #6C6C6C;
+}
+
+.nav-right{
+	display: -webkit-box;
+	width: 360px;
+	float: right;
+	position: relative;
+	left: 70px;
+	top: 2px;
+	float: right;
+	margin-top: 20px;
+}
+
+.nav-right div input{
+	width: 100px;
+	height: 30px;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	left: 15px;
+}
+
+.nav-right div{
+	text-indent: 15px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.pdd_logo{
+	display: inline-block;
+	height: 63px;
+	width: 180px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.iconfont{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	right: 30px;
+	width: 10px;
+	height: 10px;
+	font-weight: bold;
+}
+
+.gouwuche{
+	display: inline-block;
+	position: relative;
+	left: 8px;
+	font-weight: bolder;
+}
+
+/* 头部样式 */
+header {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 80px;
+}
+
+header>div>a>.banner {
+    width: 100%;
+    margin-top: 107px;
+}
+
+/* 侧边栏 */
+aside {
+    position: fixed;
+    bottom: 150px;
+    left: 0px;
+    z-index: 1000;
+    width: 162px;
+    background-color: #fff;
+}
+
+aside>div {
+    margin: 8px;
+    padding: 20px 15px 8px;
+    border: 2px solid #ffedf1;
+}
+
+aside>div>img {
+    width: 100%;
+	height: 100%;
+	border: none;
+    min-height: 112px;
+	display: block;
+}
+
+aside>div>div {
+    margin-top: 10px;
+    color: #666;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+aside>div>div>div {
+    font-size: 14px;
+    color: #666;
+	text-align: center;
+	line-height: 20px;
+}
+
+.duiqi{
+	margin-top: 10px;
+	color: #666;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+/* 内容部分 */
+main {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+main>.title {
+    height: 26px;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #c1c1c1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>.title>div {
+    font-size: 20px;
+    color: #363636;
+}
+
+main>.title>a {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #868686;
+}
+
+main>.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main>.content>.content_top {
+    padding: 14px;
+    margin-bottom: 17px;
+    margin-right: 17px;
+    background: #fff;
+}
+
+main>.content>.content_bottom {
+    display: flex;
+}
+
+main>.content>.content_bottom>div {
+    padding: 14px;
+    margin-bottom: 17px;
+    margin-right: 17px;
+    background: #fff;
+}
+
+main>.content>.content_bottom>div:nth-child(2) {
+    flex-grow: 2;
+}
+
+main>.content>.content_common {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+
+.content_common_bottom {
+    display: flex;
+}
+
+.content_common_bottom>div {
+    width: 160px;
+    height: 206px;
+    margin: 0px 12px;
+}
+
+.content_img {
+    margin: 7px 17.5px;
+    width: 125px;
+    height: 125px;
+}
+
+.content_font1 {
+    width: 160px;
+    height: 36px;
+    font-size: 12px;
+    color: #111111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+}
+
+.content_font2 {
+    display: flex;
+    justify-content: center;
+}
+
+.content_font2>span:first-child {
+    font-size: 16px;
+    color: #111111;
+}
+
+.content_font2>span:nth-child(2) {
+    font-size: 14px;
+    color: #cbcbcb;
+    text-decoration: line-through;
+}
+
+/*页尾部分*/
+footer {
+    height: 579px;
+    padding-top: 60px;
+    background: #fff;
+}
+
+.footer_top {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footertop_left {
+    margin-top: 20px;
+    display: flex;
+}
+
+.footertop_left>div {
+    margin-right: 60px;
+}
+
+.footertop_left>div>img {
+    width: 162px;
+    height: 162px;
+}
+
+.footertop_left>div>p {
+    display: flex;
+    justify-content: center;
+    width: 162px;
+    height: 22px;
+    margin: 8px 0px;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+.footertop_right {
+    width: 335px;
+    height: 240px;
+    padding-left: 45px;
+    border-left: 1px solid #4d4d4d;
+}
+
+.footertop_right>p {
+    font-size: 15px;
+    color: #4d4d4d;
+    width: 335px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 16px;
+}
+
+.footer_center {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto 58px;
+}
+
+.footer_center>ul {
+    display: inline-block;
+    position: relative;
+}
+
+.footer_center>ul>li {
+    cursor: pointer;
+    display: inline-block;
+    border-right: 1px solid #c1c1c1;
+}
+
+.footer_center>ul>li>a>span {
+    color: #6c6c6c;
+    font-size: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.footerbottom_top {
+
+    height: 130px;
+    background-color: #3f3e3e;
+}
+
+.wangjin_img{
+	width: 20px;
+	height: 20px;
+}
+
+.lgwab{
+	position: relative;
+	top: -4px;
+}
+
+.suojin{
+	text-indent: 25px;
+}
+
+.xiangxia{
+	position: relative;
+	top: 6px;
+}
+
+.footerbottom_top{
+	height: 150px;
+}
+
+.footerbottom_top>div {
+    display: flex;
+    justify-content: center;
+}
+
+.footerbottom_top>div>a,
+span {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+.footerbottom_top>div:first-child {
+    height: 14px;
+    padding-top: 27px;
+}
+
+.footerbottom_top>div:nth-child(2) {
+    height: 14px;
+    padding: 17px 0px;
+}
+
+.footerbottom_top>div:last-child {
+    height: 14px;
+}
+
+.footerbottom_bottom {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.footerbottom_bottom>a>img {
+    margin: 10px;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	max-height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+
+
+@media screen and (min-width:200px) and (max-width:960px)
+{
+    .nav_tab{
+        flex-wrap: wrap;
+    }
+}
